@@ -515,9 +515,9 @@
                 var $this = $(this);
                 //if parent colapsed we hidden
                 if ($this.treegrid('isOneOfParentsCollapsed')) {
-                    $this.hide();
+                    $this.addClass('hidden');
                 } else {
-                    $this.show();
+                    $this.removeClass('hidden');
                 }
                 if (!$this.treegrid('isLeaf')) {
                     $this.treegrid('renderExpander');
